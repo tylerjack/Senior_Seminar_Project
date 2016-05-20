@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TabWidget>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:src="@drawable/fsc"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView"
+                        android:layout_gravity="right" />
+
+                    <TextView
+                        android:id="@+id/nameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageView
+                        android:src="@drawable/fscmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <Button
+                        android:id="@+id/bLogout"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="Logout"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Classes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/fsc"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView2"
+                        android:layout_gravity="right" />
+
+                    <ListView
+                        android:id="@+id/list2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Food"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/fsc"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView3"
+                        android:layout_gravity="right" />
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>
